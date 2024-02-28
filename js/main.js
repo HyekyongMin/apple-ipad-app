@@ -58,3 +58,36 @@ function hideSearch() {
   searchInputEl.value = ''
 }
 
+
+// 요소의 가시성 관찰
+const io = new IntersectionObserver(function(entries){
+  entries.forEach(function(entry){
+    if(!entry.isIntersecting) {
+      return
+    }
+    entry.target.classList.add('show')
+  })
+})
+
+const infoEls = document.querySelectorAll('.info')
+infoEls.forEach(function(el){
+  io.observe(el)
+})
+
+
+//Video 재생!
+const video = document.querySelector('.stage video')
+const playBtn = document.querySelector('.stage .controller--play')
+const pauseBtn = document.querySelector('.stage .controller--pause')
+
+playBtn.addEventListener('click', function(){
+  video.play()
+  playBtn.classList.add('hide')
+  pauseBtn.classList.remove('hide')
+})
+
+pauseBtn.addEventListener('click', function(){
+  video.pause()
+  pauseBtn.classList.add('hide')
+  playBtn.classList.remove('hide')
+})
