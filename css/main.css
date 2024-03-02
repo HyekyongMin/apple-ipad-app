@@ -178,6 +178,36 @@ a.link::after {
   font-size: 19.5;
 }
 
+/* WhiteBox */
+.whitebox {
+  max-width: 1386px;
+  margin: 0 auto;
+  padding: 100px 30px;
+  border-radius: 30px;
+  box-sizing: border-box;
+  background-color: var(--color-white);
+}
+.whitebox.whitebox--transparent {
+  background-color: transparent;
+}
+.whitebox .icon {
+  margin-bottom: 20px;
+}
+.whitebox h1 {
+  font-size: 50px;
+  font-weight: 600;
+  line-height: 1.3;
+}
+.whitebox p {
+  margin-top: 20px;
+  font-size: 19px;
+}
+.whitebox a.link {
+  display: block;
+  margin-top: 26px;
+}
+
+
 
 /* header */
 header {
@@ -737,31 +767,205 @@ nav .menu li.active:hover a {
 
 
 /* iPadOS */
-.ipad {
-  margin-top: 300px;
+.ipados {
+  margin-top: 212px;
+}
+.ipados h1 {
+  background-image: url("../images/ipados_headline.png");
+  width: 530px;
+  height: 400px;
+  margin: 0 auto;
+}
+.ipados .infos {
+  margin-top: 44px;
+  align-items: flex-end;
+}
+.ipados .figures {
+  height: 782px;
+  display: flex;
+}
+.ipados .figures > div {
+  flex-grow: 1;
+  position: relative;
+}
+.ipados .figures .figure-split-view figure {
+  transform: translate(-205px, -362px);
+}
+.ipados .figures .figure-split-view figcaption {
+  background-image: url("../images/ipados_split_view_caption.png");
+  width: 163px;
+  height: 53px;
+  transform: translate(200px, -38px);
+}
+.ipados .figures .figure-widgets figure {
+  transform: translate(240px, 0);
+}
+.ipados .figures .figure-widgets figcaption {
+  background-image: url("../images/ipados_widgets_caption.png");
+  width: 163px;
+  height: 53px;
+  transform: translate(260px, 500px);
+}
+.ipados .figures .figure-quick-note figure {
+  transform: translate(-620px, 180px);
+}
+.ipados .figures .figure-quick-note figcaption {
+  background-image: url("../images/ipados_quick_note_caption_mobile.png");
+  width: 82px;
+  height: 97px;
+  transform: translate(511px, 407px);
+}
+
+/* Apps */
+.apps {
+  margin-top: 368px;
+}
+.apps h1 {
+  background-image: url("../images/apps_headline.png");
+  width: 500px;
+  height: 264px;
+  transform: translate(17px, 0);
+}
+.apps .infos {
+  margin-top: 36px;
+  margin-left: 82px;
+}
+.apps .figures {
+  display: flex;
+  height: 788px;
+}
+.apps .figures > div {
+  flex-grow: 1;
+  position: relative;
+}
+.apps .figure-masterclass figure {
+  transform: translate(580px, -430px);
+}
+.apps .figure-masterclass figcaption {
+  background-image: url("../images/apps_masterclass_caption.png");
+  width: 120px;
+  height: 25px;
+  transform: translate(20px, 690px);
+}
+.apps .figure-adobe figure {
+  transform: translate(-510px, 80px);
+}
+.apps .figure-adobe figcaption {
+  background-image: url("../images/apps_adobe_caption.png");
+  width: 128px;
+  height: 24px;
+  transform: translate(534px, 516px);
+}
+.apps .figure-fantasian figure {
+  transform: translate(-100px, 320px);
+}
+.apps .figure-fantasian figcaption {
+  background-image: url("../images/apps_fantasian_caption.png");
+  width: 120px;
+  height: 22px;
+  transform: translate(10px, 490px);
+}
+.apps .figure-books figure {
+  transform: translate(-126px, -146px);
+}
+.apps .figure-books figcaption {
+  background-image: url("../images/apps_books_caption.png");
+  width: 120px;
+  height: 25px;
+  transform: translate(360px, 710px);
+}
+.apps .figure-goodnotes figure {
+  transform: translate(-84px, 76px);
+}
+.apps .figure-goodnotes figcaption {
+  background-image: url("../images/apps_goodnotes_caption.png");
+  width: 120px;
+  height: 25px;
+  transform: translate(20px, 690px);
+}
+
+/* Privacy */
+.privacy {
+  margin-top: 238px;
+}
+.privacy h1 {
+  background-image: url("../images/privacy_headline.png");
+  width: 482px;
+  height: 237px;
+  margin-left: auto;
+  position: relative;
+  z-index: 1;
+  transform: translate(57px, 0);
+}
+.privacy .infos {
+  margin-top: 38px;
+  align-items: end;
+}
+.privacy figure {
+  transform: translate(-215px, -500px);
+}
+.privacy figcaption .caption-apple-id {
+  background-image: url("../images/privacy_caption_apple_id.png");
+  width: 170px;
+  height: 26px;
+  transform: translate(195px, -13px);
+}
+.privacy figcaption .caption-touch-id {
+  background-image: url("../images/privacy_caption_touch_id.png");
+  width: 150px;
+  height: 31px;
+  transform: translate(533px, 485px);
 }
 
 
+/* Accessibility */
+.accessibility {
+  margin-top: 266px;
+  margin-bottom: 170px;
+}
+.accessibility h1 {
+  background-image: url("../images/accessibility_headline.png");
+  width: 384px;
+  height: 270px;
+}
+.accessibility .infos {
+  margin-top: 20px;
+}
+.accessibility figure {
+  transform: translate(470px, -620px);
+}
 
 
+/* Ar */
+.ar {
+  background-color: var(--color-section);
+  padding: 20px 20px 0;
+}
+.ar .whitebox {
+  padding-bottom: 0;
+}
+.ar .inner {
+  display: flex;
+}
+.ar .inner > div {
+  max-width: 410px;
+  margin-top: 60px;
+  margin-right: 90px;
+}
 
-
-
-
-
-
-
-/* Apps */
-
-
-
-
-
-
-
-
-
-
+/* Environment */
+.environment {
+  background-color: var(--color-section);
+  padding: 20px 20px 0;
+  text-align: center;
+}
+.environment .icon {
+ margin-left: auto;
+ margin-right: auto;
+}
+.environment h1 {
+  color: #03a01e;
+}
 
 
 
