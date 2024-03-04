@@ -42,6 +42,11 @@ p {
   padding: 0 20px;
   position: relative;
 }
+sup {
+  margin-right: 6px;
+  font-size: .7em;
+  vertical-align: top;
+}
 
 /* Btn */
 .btn {
@@ -472,6 +477,12 @@ nav .menu li.active a {
 }
 nav .menu li.active:hover a {
   color: var(--color-font);
+}
+
+
+/* Main */
+main {
+  overflow-x: hidden;
 }
 
 /* Hero */
@@ -965,6 +976,246 @@ nav .menu li.active:hover a {
 }
 .environment h1 {
   color: #03a01e;
+}
+
+
+/* AccessoryShop */
+.accessoryshop {
+  background-color: var(--color-section);
+  text-align: center;
+}
+.accessoryshop .whitebox {
+  padding-bottom: 0px;
+}
+.accessoryshop .inner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.accessoryshop .inner img {
+  margin-top: 50px;
+}
+
+
+/* Trade */
+.trade {
+  background-color: var(--color-section);
+  padding: 20px 20px 0;
+  text-align: center;
+}
+
+
+/* Compare */
+.compare {
+  background-color: var(--color-section);
+  padding: 20px 20px 0;
+  text-align: center;
+}
+.compare .items {
+  display: flex;
+  justify-content: space-around;
+  max-width: 940px;
+  margin: 68px auto 74px;
+}
+.compare .item {
+  width: 190px;
+  padding-bottom: 34px;
+  border-bottom: 1px solid var(--color-border);
+}
+.compare .item .thumbnail {
+  height: 214px;
+  margin-bottom: 22px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+.compare .item .colors {
+  margin-bottom: 30px;
+  display: flex;
+  justify-content: center;
+  gap: 6px;
+}
+.compare .item .colors li {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background-color: lightgray;
+  box-shadow: inset 1px 1px 3px rgba(0, 0, 0, .1);
+
+}
+.compare .item h3.name {
+  margin-bottom: 4px;
+  font-size: 22px;
+}
+.compare .item .tagline {
+  margin-bottom: 20px;
+  font-size: 16px;
+}
+.compare .item .price {
+  margin-bottom: 10px;
+  font-size: 14px;
+}
+.compare .item .btn {
+  margin: 0 auto 14px;
+}
+.compare .item a.link {
+  font-size: 14px;
+}
+
+
+/* Footer */
+footer {
+  background-color: var(--color-section);
+}
+/* footer buy-info */
+footer .buy-info {
+  padding: 76px 0;
+  display: flex;
+  justify-content: space-around;
+  gap: 20px;
+  text-align: center;
+}
+footer .buy-info .icon {
+  width: 56px;
+  height: 56px;
+  margin: 0 auto 10px;
+}
+footer .buy-info h3 {
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+footer .buy-info p {
+  margin-bottom: 12px;
+  font-size: 14px;
+}
+footer .buy-info a.link {
+  font-size: 14px;
+}
+
+footer .warning {
+  padding: 18px 0 10px;
+  border-top: 1px solid var(--color-border);
+  border-bottom: 1px solid var(--color-border);
+}
+footer .warning ol {
+  list-style: decimal;
+  padding-left: 16px;
+}
+footer .warning li {
+  margin-bottom: 10px;
+  font-size: 11px;
+  line-height: 1.5;
+  color: var(--color-font-darkgray);
+}
+
+footer .breadcrumbs {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  margin: 20px 0;
+}
+footer .breadcrumbs a {
+  font-size: 12px;
+  color: var(--color-font-darkgray);
+  position: relative;
+}
+footer .breadcrumbs a.apple-logo {
+  background-image: url("../images/path_apple.svg");
+  width: 16px;
+  height: 16px;
+}
+footer .breadcrumbs a:hover {
+  text-decoration: underline;
+}
+footer .breadcrumbs a::after {
+  content: "";
+  background-image: url("../images/path_div.svg");
+  width: 8px;
+  height: 18px;
+  position: absolute;
+  top: 0;
+  bottom: 1;
+  right: -18px;
+  margin: auto;
+}
+footer .breadcrumbs a:last-child::after {
+  display: none;
+}
+
+
+footer .navigations {
+  margin-bottom: 40px;
+  height: 344px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-content: space-between;
+}
+footer .navigations .map {
+  margin-top: 24px;
+}
+footer .navigations .map:nth-child(6) {
+  padding-bottom: 100px;
+}
+footer .navigations .map h3 {
+  font-size: 12px;
+  font-weight: 600;
+}
+footer .navigations .map li {
+  margin-top: 12px;
+  font-size: 12px;
+}
+footer .navigations .map li a{
+  color: var(--color-font-darkgray);
+} 
+footer .navigations .map li a:hover {
+  text-decoration: underline;
+}
+
+
+footer .how-to-shop {
+  font-size: 12px;
+  line-height: 1.4;
+  color: var(--color-font-darkgray);
+}
+footer .how-to-shop a {
+  color: var(--color-link);
+}
+footer .how-to-shop a:hover {
+  text-decoration: underline;
+}
+
+
+footer .legal {
+  margin-top: 10px;
+  padding: 10px 0 40px;
+  border-top: 1px solid var(--color-border);
+  display: flex;
+  gap: 50px;
+  font-size: 12px;
+  color: var(--color-font-darkgray);
+}
+footer .legal ul {
+  flex-grow: 1;
+  display: flex;
+  gap: 21px;
+
+}
+footer .legal ul li {
+  position: relative;
+}
+footer .legal ul li::after {
+  content: "|";
+  position: absolute;
+  right: -11px;
+  color: var(--color-border);
+}
+footer .legal ul li:last-child::after {
+  display: none;
+}
+footer .legal ul li:hover a{
+  text-decoration: underline;
 }
 
 
