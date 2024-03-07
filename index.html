@@ -37,6 +37,14 @@
   <header>
     <div class="inner">
       <ul class="menu">
+        <li class="menu-starter">
+          <a>
+            <div>
+              <span></span>
+              <span></span>
+            </div>
+          </a>
+        </li>
         <li class="apple-logo"><a href="javascript:void(0)">Apple</a></li>
         <li><a href="javascript:void(0)">스토어</a></li>
         <li><a href="javascript:void(0)">Mac</a></li>
@@ -72,6 +80,7 @@
             <div class="search-icon"></div>
             <div class="search-closer"></div>
           </div>
+          <div class="search-canceler">취소</div>
           <div class="autocompletes">
             <h3>빠른 링크</h3>
             <ul>
@@ -84,13 +93,31 @@
           </div>
         </div>
       </div>
+
+      <div class="clone-menu">
+        <ul>
+          <li><a href="javascript:void(0)">스토어</a></li>
+          <li><a href="javascript:void(0)">Mac</a></li>
+          <li><a href="javascript:void(0)">iPad</a></li>
+          <li><a href="javascript:void(0)">iPhone</a></li>
+          <li><a href="javascript:void(0)">Watch</a></li>
+          <li><a href="javascript:void(0)">Airpods</a></li>
+          <li><a href="javascript:void(0)">Apple 독점 제공</a></li>
+          <li><a href="javascript:void(0)">액세서리</a></li>
+          <li><a href="javascript:void(0)">고객지원</a></li>
+        </ul>
+      </div>
+
     </div>
   </header>
 
   <!-- Navigation -->
   <nav>
+    <div class="shadow"></div>
+    <div class="contents-bg"></div>
     <div class="inner">
       <h1>iPad</h1>
+      <div class="menu-toggler"></div>
       <ul class="menu">
         <li class="active"><a href="javascript:void(0)">개요</a></li>
         <li><a href="javascript:void(0)">iPad를 선택하는 이유</a></li>
@@ -136,11 +163,13 @@
   <!-- Power -->
   <section class="power">
     <div class="inner">
-      <div class="multiple-apps bgtext">
-        <h1>거침없는 일처리 성능</h1>
+      <div class="multiple-apps">
+        <h1 class="bgtext">거침없는 일처리 성능</h1>
         <div class="figures">
-          <img src="./images/power_multiple_apps.png" alt="Keynote 마크업과 메시지가 함께 표시된 Split View">
-          <figcaption>동시에 여려 앱 사용 가능</figcaption>
+          <figure>
+            <img src="./images/power_multiple_apps.png" alt="Keynote 마크업과 메시지가 함께 표시된 Split View">
+            <figcaption class="bgtext">동시에 여려 앱 사용 가능</figcaption>
+          </figure>
         </div>
       </div>
       <div class="arcade feature">
@@ -297,7 +326,6 @@
   <!-- Wireless -->
   <section class="wireless">
     <div class="inner">
-
       <div class="facetime">
         <h1 class="bgtext">선이 없다는 건 한계가 없다는 것.</h1>
         <div class="figures">
@@ -533,7 +561,7 @@
     <div class="whitebox">
       <div class="inner">
         <div>
-          <img classi="icon" src="./images/ar_icon.png" alt="">
+          <img class="icon" src="./images/ar_icon.png" alt="">
           <h1>AR로 새로워진 iPad 미리 보기.</h1>
           <p>iPhone 또는 iPad에서 이 페이지를 Safari로 열어보세요.</p>
         </div>
